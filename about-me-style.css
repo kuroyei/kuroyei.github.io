@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Product Sans";
-    src: url("fonts/ProductSans-Regular.ttf") format("ttf");
+    src: url("fonts/ProductSans-Regular.woff") format("woff");
 }
 
 * {
@@ -9,7 +9,9 @@
 }
 
 body {
-    font-family: 'Product Sans','Noto Sans JP','Noto Sans SC';    
+    font-family: 'Product Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;    
     color: #404040;
     font-size: 24px;
 }
