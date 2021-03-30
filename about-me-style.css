@@ -38,7 +38,8 @@ body {
 
 
 h1 {
-    font-family: "Noto Sans CJK JP Black";
+    font-family: "Noto Sans CJK JP";
+    font-weight: 900;
     float: left;
     padding-left: 70px;
 }
