@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Product Sans";
-    src: url("fonts/ProductSans-Regular.woff") format("woff");
+    src: url("/fonts/ProductSans-Regular.woff") format("woff");
 }
 
 * {
