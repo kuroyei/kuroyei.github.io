@@ -62,19 +62,6 @@ header .headline {
     position: relative;
 }
 
-.icon {
-    float: left;
-    margin-left: 100px;
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    padding: 5px;
-    border: 5px solid rgba(226,232,240,1);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .title h1 {
     float: left;
     padding-left: 70px;
