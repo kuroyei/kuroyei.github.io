@@ -5,104 +5,99 @@
     <link rel="icon" type="img/png" href="img/web_icon.png">
     <title>くろえいのWebページ</title>
     <link rel="stylesheet" href="about-me-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Sans+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-logo">Kuroyei</div>
-        <div class="header-list">
-            <ul>
-                <li><a href="about-me.html">About me</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </div>
-    </div>
-
+    <header>
+        <a href="https://kuroyei.github.io/about-me.html" class="headline">Kuroyei</a>
+        <ul class="nav-list">
+            <li class="nav-list-item"><a href="about-me.html">About me</a></li>
+            <li class="nav-list-item"><a href="blog.html">Blog</a></li>
+        </ul>
+    </header>
 
     <div class="title">
-        <div class="title-txt">
-            <img class="icon" src="img/my_icon.jpg" alt="くろえいのアイコン">
-            <h1>くろえいについて</h1>
-       </div>
+        <img class="icon" src="img/my_icon.jpg">
+        <h1 class="title-txt">くろえいについて</h1>
     </div>
 
     <div class="main">
-
-        
-    <h3>プロフィール</h3>
+    <h2>プロフィール</h2>
         <div class="expl">
-            <p>2021.04から高専情報科の寮生です。</p>
+            <p>高専 情報科 1年 (寮生)です。</p>
             <p>コミュニケーション障害者、陰キャです。</p>
             <p>中学1年生の頃からPCに触れています。</p>
         </div>
 
-        <div class="content">
-            <h4>興味があるもの</h4>
+        <div class="card">
+            <div class="h">興味があるもの</div>
             <p>コンピュータ</p>
             <p>スマートフォン</p>
             <p>ガジェット</p>
             <p>中华人民共和国</p>
         </div>
 
-        <div class="content">
-            <h4>好きなアニメ</h4>
+        <div class="card">
+            <div class="h">好きなアニメ</div>
             <p>ご注文はうさぎですか？</p>
             <p>ラブライブ！</p>
         </div>
 
-        <div class="content">
-        <h4>HUAWEI Matebook 14</h4>
-        <table border="1">
+        <div class="card">
+        <div class="h">HUAWEI MateBook 14</div>
+        <table>
             <tr>
-                <td class="a">CPU</td><td class="b">AMD Ryzen 7 4800H</td>
+              <th>CPU</th>
+              <td>AMD Ryzen 7 4800H</td>
             </tr>
             <tr>
-                <td>RAM</td><td>16GB</td>
+              <th>RAM</th>
+              <td>16 GB</td>
             </tr>
             <tr>
-                <td>OS</td><td>Windows 10 Home</td>
-            </tr>
-        </table>
-        </div>
-
-        <div class="content ">
-        <h4>Xiaomi Redmi Note 8</h4>
-        <table border="1">
-            <tr>
-                <td class="a">SoC</td><td class="b">Qualcomm Snappdragon 665</td>
-            </tr>
-            <tr>
-                <td>RAM</td><td>4GB</td>
-            </tr>
-            <tr>
-                <td>OS</td><td>MIUI 12 (Android 10)</td>
+              <th>OS</th>
+              <td>Windows 10 Home</td>
             </tr>
         </table>
         </div>
 
-    <dev class="space"></dev>
-
-    <h3>My YouTube Video</h3>
-        <h4>最人気動画</h4>
-        <iframe width="600" height="328" src="https://www.youtube.com/embed/zmgFVCtGhO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h4>最新動画</h4>
-        <iframe width="600" height="328" src="https://www.youtube.com/embed/00Wxcj0gIxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="footer">
-        <div class="footer-logo">Kuroyei</div>
-        <div class="footer-list">
-            <ul>
-                <li><a href="https://www.youtube.com/channel/UCP4WsdDbkv1mak34yGYWDLg/">YouTube</a></li>
-                <li><a href="https://twitter.com/kuroyei">Twitter</a></li>
-                <li><a href="https://www.nicovideo.jp/user/118324481">Nicovideo</a></li>
-            </ul>
+        <div class="card last">
+        <div class="h">Xiaomi Redmi Note 8</div>
+        <table>
+            <tr>
+              <th>SoC</th>
+              <td>Qualcomm Snappdragon 665</td>
+            </tr>
+            <tr>
+              <th>RAM</th>
+              <td>4 GB</td>
+            </tr>
+            <tr>
+              <th>OS</th>
+              <td>MIUI 12 (Android 10)</td>
+            </tr>
+        </table>
         </div>
+    </main>
+    <main>
+    <h2>My YouTube Video</h2>
+        <div class="h">最人気動画</div>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/zmgFVCtGhO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="h">最新動画</div>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/00Wxcj0gIxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="last"></iframe>
     </div>
+    </main>
+
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="https://www.youtube.com/channel/UCP4WsdDbkv1mak34yGYWDLg/">YouTube</a></li>
+            <li><a href="https://twitter.com/kuroyei">Twitter</a></li>
+            <li><a href="https://www.nicovideo.jp/user/118324481">Nicovideo</a></li>
+        </ul>
+    </footer>
  
 </body>
 </html>
