@@ -93,6 +93,12 @@ img {
 
 .img1 {
     margin: 50px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.p-img2 {
+    flex-direction: column;
 }
 
 .img1 img {
@@ -107,10 +113,9 @@ img {
     vertical-align: top;
 }
 
-.img1 .img2 {
-    padding-left: 20px;
-    display: block;
-    vertical-align: top;
+.img2 {
+    padding-left: 50px;
+    margin-top: 10px;
 }
 
 .main {
