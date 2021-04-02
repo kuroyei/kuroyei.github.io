@@ -22,6 +22,15 @@ body {
     font-size: 24px;
     color: #404040;
     background-color: #F9FBFE;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+body, #wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*header*/
@@ -80,19 +89,7 @@ header .headline {
     background-size: cover;
     background-position: center;
     position: relative;
-}
-
-.icon {
-    float: left;
-    margin-left: 100px;
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    padding: 5px;
-    border: 5px solid rgba(226,232,240,1);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-bottom: 100px;
 }
 
 .title h1 {
@@ -100,7 +97,7 @@ header .headline {
     padding-left: 70px;
     font-weight: bold;
     line-height: 400px;
-    margin-left: 300px;
+    margin-left: 100px;
     color: white;
 }
 
@@ -108,97 +105,61 @@ header .headline {
 
 .main {
     margin-left: 100px;
-
+    margin-bottom: 100px;
+    flex: 1;   
 }
 
-h2 {
-    font-size: 30px;
-    padding: 12px 0 12px 15px;
-    border-left: 8px solid #435560;
-    margin: 100px 0 30px;
-}
+.cards {
 
-.expl {
-    padding-bottom: 30px;
 }
 
 /*card*/
 
 .card {
-    padding: 20px 0 20px 30px;
-    height: auto;
-    width: 600px;
-    border-radius: 20px;
-    border: 1px solid #E2E8F0;
-    box-shadow:
-        0 8px 10px 1px rgba(0,0,0,0.14),
-        0 3px 14px 2px rgba(0,0,0,0.12),
-        0 5px 5px -3px rgba(0,0,0,0.2);
-    margin-bottom: 40px;
-}
-
-.card p {
-    padding-left: 20px;
-}
-
-.h {
-    padding-bottom: 5px;
-    font-size: 30px;
-}
-
-table{
-    margin-left: 20px;
-    margin-top: 10px;
-    width: 90%;
-    border-collapse: collapse;
+    float: left;
+    margin: 0 50px 100px 50px;
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
   }
-  
-  table tr{
-    border-bottom: solid 2px white;
-  }
-  
-  table tr:last-child{
-    border-bottom: none;
-  }
-  
-  table th{
-    position: relative;
-    text-align: left;
-    width: 100px;
-    background-color: #52c2d0;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  table th:after{
+  .card-img {
+    height: 225px;
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
     display: block;
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top:calc(50% - 10px);
-    right:-10px;
-    border-left: 10px solid #52c2d0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    margin: 0 auto;
+
   }
-  
-  table td{
+  .card-content {
+    padding: 20px;
+  }
+  .date {
+    font-size: 14px;
+    color: #667EEA;
+    margin-bottom: 5px;
+  }
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
     text-align: left;
-    width: 250px;
-    text-align: center;
-    background-color: #eee;
-    padding: 10px 0;
+    color: #333;
+  }
+  .card-text {
+    text-align: left;
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
   }
 
-iframe {
-    margin-bottom: 30px;
-}
-
-.last {
-    margin-bottom: 0;
-}
+  .card-link a {
+    text-decoration: none;
+    color: #0bd;
+    margin: 0 10px;
+  }
+  .card-link a:hover {
+    color: #0090aa;
+  }
 
 /*footer*/
 
@@ -207,9 +168,9 @@ footer {
     color: white;
     padding: 40px;
     height: 50px;
-    margin-top: 100px;
-    bottom: 0;
     text-align: center;
+    bottom: 0;
+
 }
 
 .footer-menu li {
