@@ -97,10 +97,6 @@ img {
     justify-content: flex-start;
 }
 
-.p-img2 {
-    flex-direction: column;
-}
-
 .img1 img {
     margin: 0;
     width: 500px;
@@ -115,7 +111,6 @@ img {
 
 .img2 {
     padding-left: 50px;
-    margin-top: 10px;
 }
 
 .main {
@@ -123,7 +118,7 @@ img {
     flex: 1;
     max-width: 1250px;
     display: grid;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 
