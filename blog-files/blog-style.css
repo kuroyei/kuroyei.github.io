@@ -106,11 +106,13 @@ header .headline {
 .main {
     margin-left: 100px;
     margin-bottom: 100px;
-    flex: 1;   
+    flex: 1;
 }
 
 .cards {
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /*card*/
@@ -122,6 +124,9 @@ header .headline {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px #ccc;
+    text-align: left;
+
+
   }
   .card-img {
     height: 225px;
