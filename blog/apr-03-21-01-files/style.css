@@ -87,30 +87,8 @@ header .headline {
 
 img {
     margin: 50px 0;
-    width: 1250px;
+    width: 1000px;
     height: auto;
-}
-
-.img1 {
-    margin: 50px 0;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.img1 img {
-    margin: 0;
-    width: 500px;
-    height: auto;
-}
-
-.img1 p {
-    padding-left: 20px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.img2 {
-    padding-left: 50px;
 }
 
 .main {
