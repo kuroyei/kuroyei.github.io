@@ -1,0 +1,17 @@
+.title h1 {
+    border-bottom: 2px solid rgb(189, 189, 189);
+}
+
+.title p {
+    margin-top: 10px;
+    font-size: 25px;
+    color: #667EEA;
+}
+
+.main {
+    margin: 100px auto 0 auto;
+    flex: 1;
+    max-width: 1250px;
+    display: grid;
+    margin-bottom: 200px;
+}
