@@ -75,44 +75,6 @@ header .headline {
     transform: scale(1,1);
 }
 
-.title h1 {
-    border-bottom: 2px solid rgb(189, 189, 189);
-}
-
-.title p {
-    margin-top: 10px;
-    font-size: 25px;
-    color: #667EEA;
-}
-
-.num {
-    color: #435560;
-    font-size: 50px;
-}
-
-.mrl {
-    margin-left: 10px;
-}
-
-img {
-    margin: 50px 0;
-    width: 1250px;
-    height: auto;  
-}
-
-.img1 {
-    width: 500px;
-    height: auto;
-}
-
-.main {
-    margin: 100px auto 0 auto;
-    flex: 1;
-    max-width: 1250px;
-    display: grid;
-    margin-bottom: 200px;
-}
-
 footer {
     background-color: #435560;
     color: white;

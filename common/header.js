@@ -1,0 +1,1 @@
+document.write('<header><a href="https://kuroyei.github.io/about-me.html" class="headline">Kuroyei</a><ul class="nav-list"><li class="nav-list-item"><a href="https://kuroyei.github.io/about-me.html">About me</a></li><li class="nav-list-item"><a href="https://kuroyei.github.io/blog.html">Blog</a></li></ul></header>')

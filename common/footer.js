@@ -1,0 +1,1 @@
+document.write('<footer><ul class="footer-menu"><li><a href="https://www.youtube.com/channel/UCP4WsdDbkv1mak34yGYWDLg/">YouTube</a></li><li><a href="https://twitter.com/kuroyei">Twitter</a></li><li><a href="https://www.nicovideo.jp/user/118324481">Nicovideo</a></li></ul></footer>')
