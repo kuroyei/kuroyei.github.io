@@ -15,21 +15,33 @@
             <p>Apr 07, 2021</p>
             <img src="apr-07-21-01-files/1.png">
         </dev>
-        <p>head、header、footerをJavaScriptファイルから読み込むようにしたい</p>
-        <p>例</p>
-        <p>
-            &lt;header&gt;
-            &lt;a href="https://kuroyei.github.io/about-me.html" class="headline"&gt;Kuroyei&lt;/a&gt;
-            &lt;ul class="nav-list"&gt;
-            &lt;li class="nav-list-item"&gt;
-                &lt;a href="https://kuroyei.github.io/about-me.html"&gt;About me&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="nav-list-item"&gt;
-                &lt;a href="https://kuroyei.github.io/blog.html"&gt;Blog&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;/ul&gt;
+        <p>head、header、footerをJavaScriptから読み込むようにしたい<br><br></p>
+        <p class=name>HTML</p>
+        <p class=code>
+            &lt;header&gt;<br>
+            <span class=blank1>&lt;</span>a href="https://kuroyei.github.io/about-me.html" class="headline"&gt;Kuroyei&lt;/a&gt;<br>
+            <span class=blank1>&lt;</span>ul class="nav-list"&gt;<br>
+            <span class=blank2>&lt;</span>li class="nav-list-item"&gt;<br>
+            <span class=blank3>&lt;</span>a href="https://kuroyei.github.io/about-me.html"&gt;About me&lt;/a&gt;<br>
+            <span class=blank2>&lt;</span>/li&gt;<br>
+            <span class=blank2>&lt;</span>li class="nav-list-item"&gt;<br>
+            <span class=blank3>&lt;</span>a href="https://kuroyei.github.io/blog.html"&gt;Blog&lt;/a&gt;<br>
+            <span class=blank2>&lt;</span>/li&gt;<br>
+            <span class=blank1>&lt;</span>/ul&gt;<br>
             &lt;/header&gt;
         </p>
+        <p><br>上のHTMLコードを・・・<br><br></p>
+        <p class="name">header.js</p>
+        <p class=code>
+            document.write('&lt;header&gt;・・・&lt;/header&gt;')
+        </p>
+        <p><br>上のように('')の中にぶち込む。すると・・・<br><br></p>
+        <p class=name>HTML</p>
+        <p class=code>
+            &lt;script src="https://kuroyei.github.io/common/header.js"&gt;&lt;/script&gt;
+        </p>
+        <p><br>毎回&lt;header&gt;・・・&lt;/header&gt;をコピペせずとも上の一行のコードで済む<br>
+        又、headerに変更を加えたい時はheader.jsを編集するだけで済む</p>
     </div>
     <script src="https://kuroyei.github.io/common/footer.js"></script>
 </body>
