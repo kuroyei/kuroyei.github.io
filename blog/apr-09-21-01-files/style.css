@@ -15,8 +15,8 @@ img {
 
 }
 
-.link {
-    color: black;
+.link a:link, .link a:visited, .link a:hover, .link a:active {
+    color: initial;
 }
 
 .blank1 {
