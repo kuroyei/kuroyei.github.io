@@ -15,10 +15,6 @@ img {
 
 }
 
-.link a:link, .link a:visited, .link a:hover, .link a:active {
-    color: initial;
-}
-
 .blank1 {
     margin-left: 50px;
 }
