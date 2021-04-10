@@ -10,7 +10,7 @@
     font-family: 'Product Sans', 'Noto Sans JP', 'Noto Sans SC', sans-serif;
 }
 
-a:link, a:visited, a:hover, a:active {
+header a:link,header a:visited,header a:hover,header a:active,footer a:link,footer a:visited,footer a:hover,footer a:active{
     color: white;
 }
 
