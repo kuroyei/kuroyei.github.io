@@ -12,6 +12,7 @@
     margin: 100px auto 0 auto;
     flex: 1;
     max-width: 1250px;
+    min-width: 1250px;
     display: grid;
     margin-bottom: 200px;
 }

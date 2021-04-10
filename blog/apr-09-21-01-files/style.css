@@ -1,0 +1,32 @@
+img {
+    margin: 50px 0;
+    width: 1250px;
+    height: auto;
+}
+
+.name {
+    margin-left: 25px;
+    font-size: 30px;
+}
+
+.code {
+    background-color: #C1C2C4;
+    padding: 10px 0 10px 10px;
+
+}
+
+.link {
+    color: black;
+}
+
+.blank1 {
+    margin-left: 50px;
+}
+
+.blank2 {
+    margin-left: 100px;
+}
+
+.blank3 {
+    margin-left: 150px;
+}
