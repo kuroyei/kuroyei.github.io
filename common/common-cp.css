@@ -9,8 +9,21 @@
     font-family: 'Product Sans', 'Noto Sans JP', 'Noto Sans SC', sans-serif;
 }
 
+a:link {
+    color: #A0B7F6;
+}
+
+a:visited {
+    color: #C58AF9;
+}
+
+a:focus {
+    color: #C58AF9;
+}
+
 header a:link,header a:visited,header a:hover,header a:active,footer a:link,footer a:visited,footer a:hover,footer a:active{
     color: white;
+    text-decoration: none;
 }
 
 li {
