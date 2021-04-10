@@ -4,6 +4,10 @@ img {
     height: auto;
 }
 
+.img1 {
+    width: 800px;
+}
+
 .name {
     margin-left: 25px;
     font-size: 30px;
