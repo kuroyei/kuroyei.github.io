@@ -1,0 +1,541 @@
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i); */
+@import url(https://fonts.googleapis.com/css?family=Manrope:300,300i,400,400i,500,500i,700,700i,900,900i);
+@import url(https://cdn.jsdelivr.net/npm/yakuhanjp@3.2.0/dist/css/yakuhanjp.min.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanssc.css);
+
+body {
+  /* font-family: 'Roboto', 'Noto Sans JP', 'Noto Sans SC', 'sans-serif'; */
+	font-family: 'Manrope', 'Roboto', 'YakuHanJP', 'Noto Sans JP', 'Noto Sans SC', sans-serif;
+  font-size: 15px;
+  letter-spacing: .05em;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+.pc-only {
+  display: block;
+}
+  
+.sp-only {
+  display: none;
+}
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/*--------------------------------
+ ヘッダー
+---------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.header-blur {
+  background:rgba(247, 247, 247, 0.5);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+  
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+  
+.header-logo {
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: .05em;
+}
+  
+.header-logo a {
+  font-size: 30px;
+  color: #333;
+}
+  
+.gnav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+  
+.gnav-item:not(:last-child) {
+  margin-right: 20px;
+}
+  
+.gnav-item p, .gnav-item a {
+  position: relative;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px 5px;
+  transition: .3s;
+  letter-spacing: .05em;
+  color: #333;
+}
+.gnav-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+  
+.gnav-item a:hover:after {
+  width: 100%;
+}
+
+#hamburger {
+  fill: #333;
+}
+
+/*--------------------------------
+ 見出し
+---------------------------------*/
+main {
+  margin: 0;
+}
+
+/*--------------------------------
+ ページトップ
+---------------------------------*/
+/* .page-top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  filter: drop-shadow(5px 5px 5px #aaa)
+}
+  
+.page-top a{
+  display: block;
+  text-decoration: none;
+}
+  
+.pagetop:hover{
+  opacity: 0.85;
+} */
+
+/*--------------------------------
+ bottom buttons
+---------------------------------*/
+  .btm-btn-outer{
+    /*.share-outer,.backtotop-outer*/
+    position:fixed;
+    bottom:0;
+    width:64px;
+    height:64px;
+    transition:all .25s cubic-bezier(.65,.05,.36,1);
+    z-index:999;
+  }
+
+  .btm-btn-outer:hover{
+    /*.share-outer:hover,backtotop-outer:hover*/
+    width:256px;
+    height:256px;
+  }
+
+  .btm-btn-outer:hover path{
+    /*.share-outer:hover path,.backtotop-outer:hover path*/
+    fill:#fefefe;
+  }
+
+  .btm-btn{
+    /*share,backtotop*/
+    display:flex;
+    fill:#1da1f2;
+    align-items:center;
+    position:absolute;
+    bottom:16px;
+    width:256px;
+    height:64px;
+  }
+
+  /*--------------------------------
+  Twitter
+  ---------------------------------*/
+  .share-outer{
+    left:0;
+    background-image:linear-gradient(to left bottom,transparent 50%,#1da1f2b3 75%,#1da1f2 100%);
+  }
+
+  .share-outer path{
+    transition:fill .25s cubic-bezier(.65,.05,.36,1)
+  }
+
+  .share{
+    left:16px;
+  }
+
+  .share a{
+    display:flex;
+    align-items:center;
+    width:80px;
+    height:80px;
+    padding:8px
+  }
+
+  .share svg{
+    width:64px;
+    height:64px
+  }
+
+  /*--------------------------------
+  back to top
+  ---------------------------------*/
+  .backtotop-outer{
+    right:0;
+    background-image:linear-gradient(to right bottom,transparent 50%,#1da1f2b3 75%,#1da1f2 100%);
+  }
+
+  .backtotop-outer path{
+    transition:fill .25s cubic-bezier(.65,.05,.36,1)
+  }
+
+  .backtotop{
+    right:16px;
+  }
+
+  .backtotop a{
+    background-color:transparent;
+    border:0;
+    position:absolute;
+    right:16px;
+    bottom:16px;
+    transition:all .25s cubic-bezier(.65,.05,.36,1)
+  }
+
+  .backtotop svg{
+    width:32px;
+    height:32px
+  }
+
+  /*media Queries 1050
+  ----------------------------------------------------*/
+  @media screen and (max-width:1050px){
+    .container {
+      padding: 0 20px;
+    }
+
+    .btm-btn-outer{
+      /*.share-outer,.backtotop-outer*/
+      width:128px!important;
+      height:128px!important;
+    }
+
+    .btm-btn-outer path{
+      /*.share path,.backtotop path*/
+      fill:#fefefe;
+    }
+
+    .btm-btn{
+      /*.share,backtotop*/
+      bottom:0;
+    }
+
+    .share{
+      left:0;
+    }
+
+    .backtotop{
+      right:0;
+    }
+  }
+
+/*--------------------------------
+ フッター
+---------------------------------*/
+.footer {
+  padding: 30px;
+}
+  
+.copyright {
+  font-size: 15px;
+  text-align: center;
+}
+  
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .pc-only {
+    display: none;
+  }
+  
+  .sp-only {
+    display: block;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  /* ヘッダー */
+  .header .container {
+    padding: 15px;
+  }
+
+  .header-logo {
+    margin-right: 15px;
+  }
+
+  .header-logo a {
+    font-size: 20px;
+  }
+
+  .gnav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .gnav-item p, .gnav-item a {
+    font-size: 14px;
+  }
+
+  .gnav-item a:after {
+    display: none;
+  }
+  /* フッター */
+  .footer {
+    padding: 20px;
+  }
+}
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  color: #fff;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/*背景用*/
+body {
+  padding: 30px;
+  position: relative;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+
+/*--------------------------------
+ 画像
+---------------------------------*/
+.main-pic img{
+  border-radius: 20px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.397));
+  transition: 1s all;
+  margin-bottom: 40px;
+}
+.main-pic img:hover {
+  transform: scale(1.02,1.02);
+  transition: 1s all;
+
+}
+
+h1{
+  margin-bottom: 30px;
+}
+h2{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/*--------------------------------
+ ボタン
+---------------------------------*/
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*竹林人間を崇める！*/
+
+a.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+
+  background: #fff;
+}
+
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+/*押す*/
+
+a.btn-emergency {
+  position: relative;
+
+  display: block;
+
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+a.btn-emergency:hover .btn-emergency-top {
+  top: 10px;
+
+  height: 50px;
+}
+
+a.btn-emergency:active .btn-emergency-top {
+  top: 20px;
+
+  height: 40px;
+}
+
+.btn-emergency-top {
+  position: absolute;
+  top: 0;
+  left: 20px;
+
+  width: 160px;
+  height: 60px;
+  margin-top: 30px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border-radius: 0 0 50% 50%;
+  background: #d62d2d;
+}
+
+.btn-emergency-top:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+
+  width: 160px;
+  height: 60px;
+
+  content: "";
+
+  border-radius: 80px / 30px;
+  background: #ed4c4c;
+}
+
+.btn-emergency-top span {
+  font-size: 38px;
+  font-weight: bold;
+
+  position: absolute;
+  top: -24px;
+  left: 0;
+
+  width: 100%;
+
+  -webkit-transform: scaleY(0.75);
+
+  transform: scaleY(0.75);
+
+  color: #f6a3a3;
+}
+
+.btn-emergency-bottom {
+  position: absolute;
+  top: 38px;
+  left: 0;
+
+  width: 200px;
+  height: 80px;
+
+  border-radius: 100px / 40px;
+  background: #d8e4ea;
+  -webkit-box-shadow: 0 8px 0 #c4cacc;
+  box-shadow: 0 8px 0 #c4cacc;
+}
+
+.footer{
+    margin-top: 40px;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #FFF;
+}
